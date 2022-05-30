@@ -792,7 +792,7 @@ input[type='checkbox'] {
 	margin-bottom: 1.25rem;
 }
 .about_section {
-  background-image: url(../images/about-bg.png);
+  background-image: url(../images/about-bg.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -1052,8 +1052,8 @@ input[type='checkbox'] {
 /*     07. Video     */
 /*********************/
 .basic-1 {
-	padding-top: 6.375rem;
-	padding-bottom: 6.875rem;
+	padding-top: 2.375rem;
+	padding-bottom: 2.875rem;
 	background: url('../images/video-background.png') center center no-repeat;
 	background-size: cover; 
 }
@@ -1064,7 +1064,9 @@ input[type='checkbox'] {
 }
 
 .basic-1 .p-heading {
-	margin-bottom: 4rem;
+	font-size: small;
+	margin-bottom: 2rem;
+	padding-bottom: 0.175rem;
 	text-align: center;
 }
 
@@ -1156,6 +1158,14 @@ input[type='checkbox'] {
 /*************************/
 /*     09. Details 1     */
 /*************************/
+.about .about_section{
+	vertical align-items: center;
+	
+}
+
+.about_section #js-rotating {
+	color: #be0866;
+}
 .basic-2 {
 	padding-top: 8rem;
 	padding-bottom: 3.5rem;
