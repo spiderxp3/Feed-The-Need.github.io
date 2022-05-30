@@ -1,4 +1,20 @@
+/* Template: Juno - Multipurpose Landing Page Pack
+   Author: InovatikThemes
+   Created: Mar 2019
+   Description: Master CSS file
+*/
 
+/*****************************************
+Table Of Contents:
+
+01. General Styles
+02. Preloader
+03. Navigation
+04. Header
+05. Features
+******************************************/
+
+/*****************************************
 Colors:
 
 - Text, navbar links - white #f1f1f8
@@ -20,7 +36,7 @@ html {
 
 body, p {
 	color: #f1f1f8; 
-	font: 400 0.875rem/1.375rem "Open Sans", sans-serif;
+	font: 200 0.675rem/1.375rem "Open Sans", sans-serif;
 }
 
 .p-large {
@@ -628,9 +644,10 @@ input[type='checkbox'] {
 	-webkit-backface-visibility: hidden;
 }
 
-.navbar-custom .navbar-brand.logo-text {
-	font: 700 2.375rem/1.5rem "Montserrat", sans-serif;
+.navbar-custom .navbar-brand.navbar-brand.logo-image-text {
+	font-size: "Monoton";
 	color: #fff;
+	vertical-align: middle;
 	letter-spacing: -0.5px;
 	text-decoration: none;
 }
@@ -648,7 +665,7 @@ input[type='checkbox'] {
 
 .navbar-custom .nav-item .nav-link:hover,
 .navbar-custom .nav-item .nav-link.active {
-	color: #A01F62;
+	color: #f4eef1;
 }
 
 /* Dropdown Menu */
@@ -687,7 +704,13 @@ input[type='checkbox'] {
 .navbar-custom .dropdown-item:hover {
 	background-color: #4633af;
 }
+.navbar-custom .navbar-brand.navbar-brand.logo-image-text:hover{
+	color:#A01F62
+}
 
+.navbar-custom .navbar-brand.navbar-brand.logo-image-text:hover{
+	color:#A01F62
+}
 .navbar-custom .dropdown-item .item-text {
 	font: 700 0.75rem/1.5rem "Montserrat", sans-serif;
 }
@@ -757,7 +780,7 @@ input[type='checkbox'] {
 }
 
 .header #js-rotating {
-	color: #ce498e;
+	color: #be0866;
 }
 
 .header .p-large {
@@ -769,7 +792,7 @@ input[type='checkbox'] {
 	margin-bottom: 1.25rem;
 }
 .about_section {
-  background-image: url(../images/about-bg.jpg);
+  background-image: url(../images/about-bg.png);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -917,7 +940,7 @@ input[type='checkbox'] {
 
 .tabs .nav-link.active,
 .tabs .nav-link:hover {
-	border-bottom: 0.1875rem solid #00c9db;
+	border-bottom: 0.1875rem solid #A01F62;
 	background-color: transparent;
 	color: #00c9db;
 }
@@ -942,12 +965,13 @@ input[type='checkbox'] {
 
 .tabs .card-title {
 	margin-bottom: 0.5rem;
+	color:#00c9db
 }
 
 .tabs .card .card-icon {
 	display: inline-block;
-	width: 3.5rem;
-	height: 3.5rem;
+	width: 0.5rem;
+	height: 0.5rem;
 	border-radius: 50%;
 	background-color: #A01F62;
 	text-align: center;
@@ -1345,14 +1369,14 @@ input[type='checkbox'] {
 
 .counter #counter .counter-value {
 	color: #f1f1f8;
-	font: 700 3.5rem/4.25rem "Montserrat", sans-serif;	
+	font: 100 1.5rem/3.25rem "Montserrat", sans-serif;	
 	vertical-align: middle;
 }
 
 .counter #counter .counter-info {
 	margin-bottom: 0;
 	color: #A01F62;
-	font: 400 0.875rem/1.25rem "Open Sans", sans-serif;
+	font: 100 1.175rem/1.25rem "Open Sans", sans-serif;
 	vertical-align: middle;
 }
 
@@ -1574,7 +1598,7 @@ a:hover.back-to-top {
 	/* end of general styles */
 
 	.navbar-brand .text{
-		color:#160e47
+		color:#f3f3f3
 	}
 	/* Navigation */
 	.navbar-custom {
@@ -1607,8 +1631,8 @@ a:hover.back-to-top {
 		background-color: #A01F62;
 	}
 
-	.navbar-custom.top-nav-collapse .navbar-brand.logo-text {
-		color: #fff;
+	.navbar-custom.top-nav-collapse .navbar-brand.navbar-brand.navbar-brand.logo-image-text {
+		color: rgb(255, 255, 255);
 	}
 
 	.navbar-custom.top-nav-collapse .nav-item .nav-link {
@@ -1617,7 +1641,7 @@ a:hover.back-to-top {
 	
 	.navbar-custom.top-nav-collapse .nav-item .nav-link:hover,
 	.navbar-custom.top-nav-collapse .nav-item .nav-link.active {
-		color: #A01F62;
+		color: #0004f9;
 	}
 
 	.navbar-custom .dropdown-menu {
@@ -1972,7 +1996,7 @@ a:hover.back-to-top {
 	
 	/* Navigation */
 	.navbar-custom {
-		padding: 2.125rem 5rem 2.125rem 5rem;
+		padding: 1.125rem 5rem 2.125rem 5rem;
 	}
 
 	.navbar-custom.top-nav-collapse {
