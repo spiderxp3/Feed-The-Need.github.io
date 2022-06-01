@@ -25,8 +25,8 @@ if (empty($_POST["terms"])) {
     $terms = $_POST["terms"];
 }
 
-$EmailTo = "aryanverma19oct@gmail.com";
-$Subject = "New message from Leno landing page";
+$sendEmailTo = ('pankaj4pj@gmail.com');
+$Subject = "New message from Feed The Need";
 
 // prepare email body text
 $Body = "";
@@ -44,7 +44,7 @@ $Body .= $terms;
 $Body .= "\n";
 
 // send email
-$success = mail($EmailTo, $Subject, $Body, "From:".$email);
+$success = mail($sendEmailTo, $Subject, $Body, "From:".$email);
 
 // redirect to success page
 if ($success && $errorMSG == ""){
