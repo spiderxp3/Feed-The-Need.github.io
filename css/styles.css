@@ -848,7 +848,8 @@ input[type='checkbox'] {
 }
 
 .slider-1 .card {
-	height: 300px;
+	height: 320px;
+	width: 260px;
 	box-decoration-break: clone;
 	background-color: transparent;
 }
@@ -860,7 +861,7 @@ input[type='checkbox'] {
 	width: 6rem;
 	height: 6rem;
 	margin-right: auto;
-	margin-top: 1.25rem;
+	margin-top: 2.25rem;
 	margin-bottom: 0.25rem;
 	margin-left: auto;
 	border-radius: 50%;
