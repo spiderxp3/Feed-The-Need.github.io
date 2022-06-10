@@ -775,9 +775,9 @@ input[type='checkbox'] {
 
 .about_section h1{
 	text-align: center;
-	vertical-align: middle;
 	text-shadow: 0px 0px 10px rgb(0, 0, 0);
 	transition: 0.3s;
+	padding-top: 6rem;
 }
 .about_section #js-rotating {
 	color: #be0866;
@@ -858,7 +858,7 @@ input[type='checkbox'] {
 .slider-1 .card {
 	height: 320px;
 	width: 260px;
-	margin-left: 91rem;
+	align-items: center;
 	box-decoration-break: clone;
 	background-color: transparent;
 }
