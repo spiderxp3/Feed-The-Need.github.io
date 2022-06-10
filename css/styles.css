@@ -9,12 +9,12 @@ html {
 
 body, p {
 	color: #f1f1f8; 
-	font: 200 0.675rem/1.375rem "Open Sans", sans-serif;
+	font: 100 0.73rem/1.375rem "Open Sans", sans-serif;
 }
 
 .p-large {
 	color: #f1f1f8;
-	font: 400 1rem/1.5rem "Open Sans", sans-serif;
+	font: 350 0.94rem/1.5rem "Open Sans", sans-serif;
 }
 
 .p-small {
@@ -57,7 +57,7 @@ h4 {
 
 h5 {
 	color:#00c9db;
-	font: 700 1.125rem/1.625rem "Montserrat", sans-serif;
+	font: 700 1.225rem/1.85rem "Montserrat", sans-serif;
 }
 
 h6 {
@@ -67,12 +67,10 @@ h6 {
 
 a {
 	color: #f1f1f8;
-	text-decoration: underline;
 }
 
 a:hover {
 	color: #f1f1f8;
-	text-decoration: underline;
 }
 
 a.turquoise {
@@ -84,11 +82,11 @@ a.white {
 }
 
 .testimonial-text {
-	font: italic 400 1rem/1.5rem "Open Sans", sans-serif;
+	font: Italic 100 0.78rem/1.25rem "Open-sans", sans-serif;
 }
 
 .testimonial-author {
-	font: 700 1rem/1.5rem "Montserrat", sans-serif;
+	font: 700 1.0rem/1.5rem "Open-Sans", sans-serif;
 }
 
 .btn-solid-reg {
@@ -148,7 +146,6 @@ a.white {
 .btn-outline-reg:hover {
 	background-color: #A01F62;
 	color: #fff;
-	text-decoration: none;
 }
 
 .btn-outline-lg {
@@ -159,7 +156,6 @@ a.white {
 	background-color: transparent;
 	color: #A01F62;
 	font: 700 0.75rem/0 "Montserrat", sans-serif;
-	text-decoration: none;
 	transition: all 0.2s;
 }
 
@@ -176,14 +172,12 @@ a.white {
 	background-color: transparent;
 	color: #A01F62;
 	font: 700 0.625rem/0 "Montserrat", sans-serif;
-	text-decoration: none;
 	transition: all 0.2s;
 }
 
 .btn-outline-sm:hover {
 	background-color: #A01F62;
 	color: #fff;
-	text-decoration: none;
 }
 
 .form-group {
@@ -365,7 +359,6 @@ input[type='checkbox'] {
 .help-block.with-errors ul {
 	margin-bottom: 0;
 }
-
 
 
 @-webkit-keyframes tada {
@@ -607,11 +600,14 @@ input[type='checkbox'] {
 }
 
 .navbar-custom .navbar-brand.navbar-brand.logo-image-text {
-	font-size: "Monoton";
 	color: #fff;
 	vertical-align: middle;
-	letter-spacing: -0.5px;
-	text-decoration: none;
+	text-align: center;
+	position: relative;
+	-webkit-mask-image: linear-gradient(-60deg, #ffffff 70%, #ffffff 80%, #cccccc99 90%);
+	-webkit-mask-size: 200%;
+	animation: shine 2.0s linear infinite;
+
 }
 
 .navbar-custom .navbar-nav {
@@ -621,7 +617,6 @@ input[type='checkbox'] {
 .navbar-custom .nav-item .nav-link {
 	padding: 0 0.75rem 0 0.75rem;
 	color: #fff;
-	text-decoration: none;
 	transition: all 0.2s ease;
 }
 
@@ -660,7 +655,6 @@ input[type='checkbox'] {
 
 .navbar-custom .dropdown-item {
 	color: #fff;
-	text-decoration: none;
 }
 
 .navbar-custom .dropdown-item:hover {
@@ -739,13 +733,18 @@ input[type='checkbox'] {
 
 .header h1 {
 	margin-bottom: 1rem;
-	text-align: center;
-	text-align: center;
+	display: inline-block;
 	position: relative;
-	-webkit-mask-image: linear-gradient(-79deg, #fdfdfddc 90%, #c6c6c6 90%, #ffffff99 90%);
+	text-align: center;
+	-webkit-mask-image: linear-gradient(-60deg, #ffffff 70%, #ffffff 80%, #cccccc99 90%);
 	-webkit-mask-size: 200%;
-	animation: shine 1.5s linear infinite;		
+	animation: shine 2.0s linear infinite;
 }
+
+@keyframes shine {
+	from { -webkit-mask-position: 150%; }
+	to { -webkit-mask-position: -100%; }
+  }
 
 .header #js-rotating {
 	color: #be0866;
@@ -815,8 +814,8 @@ input[type='checkbox'] {
 /*     05. Testimonials     */
 /****************************/
 .slider-1 {
-	padding-top: 6.875rem;
-	padding-bottom: 6.375rem;
+	padding-top: 4.875rem;
+	padding-bottom: 5.375rem;
 	background-color: #262431;
 }
 
@@ -833,7 +832,7 @@ input[type='checkbox'] {
 .slider-1 .swiper-button-prev:focus,
 .slider-1 .swiper-button-next:focus {
 	/* even if you can't see it chrome you can see it on mobile device */
-	outline: none;
+	outline:#00c9db;
 }
 
 .slider-1 .swiper-button-prev {
@@ -849,15 +848,19 @@ input[type='checkbox'] {
 }
 
 .slider-1 .card {
-	position: relative;
-	border: none;
+	height: 300px;
+	box-decoration-break: clone;
 	background-color: transparent;
 }
-
+.slider-1 .card:hover{
+  box-shadow: 0px 0px 20px rgb(33, 32, 32);
+  transition: 0.3s;
+}
 .slider-1 .card-image {
 	width: 6rem;
 	height: 6rem;
 	margin-right: auto;
+	margin-top: 1.25rem;
 	margin-bottom: 0.25rem;
 	margin-left: auto;
 	border-radius: 50%;
@@ -873,7 +876,7 @@ input[type='checkbox'] {
 
 
 /************************/
-/*     05. Features     */
+/*     06. Features     */
 /************************/
 .tabs {
 	padding-top: 6.5rem;
@@ -883,12 +886,12 @@ input[type='checkbox'] {
 
 .tabs h2 {
 	margin-bottom: 1.125rem;
-	color:#00c9db;
+	color:#00d5e8;
 	text-align: center;
 	position: relative;
-	-webkit-mask-image: linear-gradient(-79deg, #fdfdfddc 90%, #c6c6c6 90%, #ffffff99 90%);
+	-webkit-mask-image: linear-gradient(-60deg, #fdfdfddc 90%, #000000 90%, #ffffff99 90%);
 	-webkit-mask-size: 200%;
-	animation: shine 1.5s linear infinite;		
+	animation: shine 2.0s linear infinite;		
 }
 
 .tabs .p-heading {
@@ -911,7 +914,6 @@ input[type='checkbox'] {
 	border-radius: 1;
 	color: #f1f1f8;
 	font: 700 1rem/1.75rem "Montserrat", sans-serif;
-	text-decoration: none;
 	transition: all 0.2s ease;
 }
 
@@ -1132,52 +1134,9 @@ input[type='checkbox'] {
 /* end of video play button */  
 
 
-/*************************/
-/*     09. Details 1     */
-/*************************/
-.basic-2 {
-	padding-top: 8rem;
-	padding-bottom: 3.5rem;
-	background-color: #262431;
-}
-
-.basic-2 img {
-	margin-bottom: 3.5rem;
-}
-
-.basic-2 h3 {
-	margin-bottom: 1.125rem;
-}
-
-.basic-2 .btn-solid-reg {
-	margin-top: 0.5rem;
-}
-
-
-/*************************/
-/*     10. Details 2     */
-/*************************/
-.basic-3 {
-	padding-top: 3.5rem;
-	padding-bottom: 7.25rem;
-	background-color: #262431;
-}
-
-.basic-3 .text-container {
-	margin-bottom: 3.5rem;
-}
-
-.basic-3 h3 {
-	margin-bottom: 1.125rem;
-}
-
-.basic-3 .btn-solid-reg {
-	margin-top: 0.5rem;
-}
-
 
 /***************************/
-/*     12. Screenshots     */
+/*    8. Screenshots     */
 /***************************/
 .slider-2 {
 	padding-top: 6.875rem;
@@ -1221,7 +1180,7 @@ input[type='checkbox'] {
 
 
 /************************/
-/*     13. Download     */
+/*     9. Download     */
 /************************/
 .basic-4 {
 	padding-top: 6.5rem;
@@ -1250,7 +1209,7 @@ input[type='checkbox'] {
 
 
 /**************************/
-/*     18. Statistics     */
+/*     10. Statistics     */
 /**************************/
 .counter {
 	padding-top: 6.5rem;
@@ -1264,25 +1223,27 @@ input[type='checkbox'] {
 	width: 6.25rem;
 	margin-right: 1rem;
 	margin-left: 1rem;
-	margin-bottom: 2rem;
 }
 
 .counter #counter .counter-value {
-	color: #f1f1f8;
-	font: 100 1.5rem/3.25rem "Montserrat", sans-serif;	
-	vertical-align: middle;
+	color:#ffffff	
+}
+
+.counter #counter .counter-value:hover {
+	text-shadow: 0px 0px 5px rgb(238, 236, 236);
+	transition: 0.3s;
 }
 
 .counter #counter .counter-info {
 	margin-bottom: 0;
 	color: #A01F62;
-	font: 100 1.175rem/1.25rem "Open Sans", sans-serif;
+	font: 400 1.2rem/1.25rem "Open Sans", sans-serif;
 	vertical-align: middle;
 }
 
 
 /***********************/
-/*     16. Contact     */
+/*     11. Contact     */
 /***********************/
 .form {
 	padding-top: 6.25rem;
@@ -1295,9 +1256,9 @@ input[type='checkbox'] {
 	margin-bottom: 1.125rem;
 	text-align: center;
 	position: relative;
-	-webkit-mask-image: linear-gradient(-79deg, #fdfdfddc 90%, #c6c6c6 90%, #ffffff99 90%);
+	-webkit-mask-image: linear-gradient(-60deg, #fdfdfddc 90%, #c6c6c6 90%, #ffffff99 90%);
 	-webkit-mask-size: 200%;
-	animation: shine 1.5s linear infinite;		
+	animation: shine 2.4s linear infinite;		
 	text-align: center;
 }
 
@@ -1321,7 +1282,7 @@ input[type='checkbox'] {
 
 
 /**********************/
-/*     16. Footer     */
+/*     12. Footer     */
 /**********************/
 .footer {
 	padding-top: 5rem;
@@ -1371,24 +1332,8 @@ input[type='checkbox'] {
     color: #A01F62;
 }
 
-/*************************/
-/*     17. Copyright     */
-/*************************/
-.copyright {
-	padding-top: 1rem;
-	padding-bottom: 0.5rem;
-	background-color: #262431;
-	text-align: center;
-}
-
-.copyright .p-small {
-	color: #f1f1f8;
-	opacity: 0.6;
-}
-
-
 /**********************************/
-/*     18. Back To Top Button     */
+/*     13. Back To Top Button     */
 /**********************************/
 a.back-to-top {
 	position: fixed;
@@ -1409,83 +1354,8 @@ a:hover.back-to-top {
 }
 
 
-/***************************/
-/*     19. Extra Pages     */
-/***************************/
-.ex-header {
-	padding-top: 8rem;
-	padding-bottom: 5rem;
-	background: linear-gradient(to bottom right, #2c1a7e, #5557db);
-	text-align: center;
-}
-
-.ex-basic-1 {
-	padding-top: 2rem;
-	padding-bottom: 0.875rem;
-	background-color: #2f2c3d;
-}
-
-.ex-basic-1 .breadcrumbs {
-	margin-bottom: 1.125rem;
-}
-
-.ex-basic-1 .breadcrumbs .fa {
-	margin-right: 0.5rem;
-	margin-left: 0.625rem;
-}
-
-.ex-basic-2 {
-	padding-top: 4.75rem;
-	padding-bottom: 4rem;
-	background-color: #262431;
-}
-
-.ex-basic-2 h3 {
-	margin-bottom: 1rem;
-}
-
-.ex-basic-2 .text-container {
-	margin-bottom: 3.625rem;
-}
-
-.ex-basic-2 .text-container.last {
-	margin-bottom: 0;
-}
-
-.ex-basic-2 .list-unstyled .fas {
-	color: #A01F62;
-	font-size: 0.5rem;
-	line-height: 1.375rem;
-}
-
-.ex-basic-2 .list-unstyled .media-body {
-	margin-left: 0.625rem;
-}
-
-.ex-basic-2 .btn-outline-reg {
-	margin-top: 1.75rem;
-}
-
-.ex-basic-2 .image-container-large {
-	margin-bottom: 4rem;
-}
-
-.ex-basic-2 .image-container-large img {
-	border-radius: 0.25rem;
-}
-
-.ex-basic-2 .image-container-small img {
-	border-radius: 0.25rem;
-}
-
-.ex-basic-2 .text-container.dark-bg {
-	padding: 1.625rem 1.5rem 0.75rem 2rem;
-	background-color: #f9fafc;
-}
-
-
 /*****************************/
-/*     20. Media Queries     */
+/*     14. Media Queries     */
 /*****************************/	
 /* Min-width width 768px */
 @media (min-width: 768px) {
@@ -1537,7 +1407,7 @@ a:hover.back-to-top {
 	}
 
 	.navbar-custom.top-nav-collapse .navbar-brand.navbar-brand.navbar-brand.logo-image-text {
-		color: rgb(255, 255, 255);
+		color: rgb(255, 255, 255);		
 	}
 
 	.navbar-custom.top-nav-collapse .nav-item .nav-link {
@@ -1640,14 +1510,6 @@ a:hover.back-to-top {
 		margin-bottom: 0;
 	}
 	/* end of features */
-
-
-	/* Details Lightboxes */
-	.lightbox-basic {
-		padding: 3rem 3rem;
-	}
-	/* end of details lightboxes */
-
 
 	/* Screenshots */
 	.slider-2 .swiper-button-prev {
@@ -1825,18 +1687,6 @@ a:hover.back-to-top {
 		margin-bottom: 0;
 	}
 	/* end of details 2 */
-
-
-	/* Details Lightboxes */
-	.lightbox-basic img {
-		margin-bottom: 0;
-		margin-left: 0;
-	}
-
-	.lightbox-basic h3 {
-		margin-top: 0.25rem;
-	}
-	/* end of details lightboxes */
 
 
 	/* Screenshots */
@@ -2052,4 +1902,20 @@ a:hover.back-to-top {
 	}
 	/* end of extra pages */
 }
+
+/*************************/
+/*     15. Copyright     */
+/*************************/
+.copyright {
+	padding-top: 1rem;
+	padding-bottom: 0.5rem;
+	background-color: #262431;
+	text-align: center;
+}
+
+.copyright .p-small {
+	color: #f1f1f8;
+	opacity: 0.6;
+}
+
 /* end of min-width width 1200px */
