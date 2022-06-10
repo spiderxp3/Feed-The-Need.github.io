@@ -858,6 +858,7 @@ input[type='checkbox'] {
 .slider-1 .card {
 	height: 320px;
 	width: 260px;
+	margin-left: 91rem;
 	box-decoration-break: clone;
 	background-color: transparent;
 }
@@ -1235,7 +1236,10 @@ input[type='checkbox'] {
 }
 
 .counter #counter .counter-value {
-	color:#ffffff	
+	color:#ffffff;
+	font: 400 1.2rem/1.25rem "Open Sans", sans-serif;
+	vertical-align: middle;
+		
 }
 
 .counter #counter .counter-value:hover {
